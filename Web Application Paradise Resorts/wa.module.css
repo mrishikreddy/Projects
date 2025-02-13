@@ -1,0 +1,131 @@
+/* Global Styling */
+
+  
+  /* Container */
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Background Video */
+  .videoBackground {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  
+  /* Video Responsiveness */
+  @media (min-aspect-ratio: 16/9) {
+    .videoBackground {
+      width: 90%;
+      height: auto;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .videoBackground {
+      width: auto;
+      height: 90%;
+    }
+  }
+  
+  /* Form Wrapper */
+  .formWrapper {
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Input Container */
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .inputField {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid silver;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0px 0px 15px rgb(200, 200, 200);
+  }
+  
+  .inputField:focus {
+    border: 2px solid #004eff;
+  }
+  
+  
+  /* Button */
+  .btn {
+    background-color: #004eff;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px black;
+  }
+  
+  .btn:hover {
+    background-color: #2600ff;
+  }
+  
+  /* Links */
+  .links {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .links a {
+    color: #004eff;
+    text-decoration: none;
+  }
+  
+  .signup {
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .formWrapper {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    .inputField {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .icon {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .btn {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  
