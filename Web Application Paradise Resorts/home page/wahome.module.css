@@ -1,0 +1,217 @@
+
+.nav {
+    padding-left: 5%;
+    width: 90%;
+    height: 72px;
+    padding-bottom: -3px;
+    text-align: center;
+}
+
+.nav a {
+    font-size: 26px;
+    padding: 25% 30% 17% 30%;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.fdiv {
+    background-color: #66D3FA;
+    width: 100%;
+    min-width: 1000px;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+.bd {
+    background-color: #232323;
+    color: white;
+    width: 100%;
+    min-width: 1000px;
+    height: 450px;
+}
+
+.bd a {
+    color: white;
+    text-decoration: none;
+}
+
+.bt {
+    width: 100%;
+    text-align: center;
+    height: 70px;
+}
+
+.bt th {
+    padding-left: 15%;
+    padding-right: 0%;
+}
+
+.bt a:hover {
+    color: silver;
+}
+
+.info {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+}
+
+.icon {
+    font-size: 40px;
+}
+
+.hm {
+    margin: auto;
+    width: 90%;
+    max-width: 1500px;
+    min-width: 1000px;
+    height: 1000px;
+}
+
+.hmp {
+    margin: auto;
+    width: 90%;
+    max-width: 1500px;
+    min-width: 1000px;
+    height: 1200px;
+}
+
+.hmm {
+    color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 1500px;
+    min-width: 1000px;
+    height: 810px;
+    border-radius: 7px;
+    background-image: url('/dn.jpg');
+    background-size: 100%;
+}
+
+.vv {
+    width: 90%;
+    height: 750px;
+    max-width: 1500px;
+    min-width: 1000px;
+    font-size: 22px;
+    margin: auto;
+}
+
+.res {
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+}
+
+.sd {
+    width: 20%;
+    height: 450px;
+    background-color: #89dcfb;
+    border-radius: 20px;
+    float: left;
+    margin-left: 4%;
+}
+
+.sd:hover {
+    color: white;
+    background-color: #00bbff;
+    margin-top: -2%;
+}
+
+.idi {
+    width: 100%;
+    height: 150px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+
+.botn {
+    margin-left: 25%;
+    height: 40px;
+    width: 50%;
+    background-color: #52B640;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+
+.botn:hover {
+    opacity: 5;
+}
+
+.fs {
+    font-size: 22px;
+}
+
+.fsmm {
+    font-size: 22px;
+    margin: 5%;
+}
+
+.sdm {
+    width: 40%;
+    margin-left: 5%;
+    height: 400px;
+    float: left;
+    text-align: center;
+}
+
+.imii {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.imii:hover {
+    transform: scale(1.2);
+}
+
+.but {
+    background-color: black;
+    color: white;
+    width: 8%;
+    max-width: 120px;
+    height: 40px;
+    margin-left: 2%;
+    border-radius: 7px;
+    opacity: 0.9;
+}
+
+.but:hover {
+    opacity: 5;
+}
+
+.butt {
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    max-width: 1500px;
+    min-width: 1000px;
+}
+
+
+
+  .starIcon{
+    background-color: #d2fa66;
+    width: 20px;
+    color: gold;
+  }
+
+  .toCenter{
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+
+
