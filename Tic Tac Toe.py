@@ -83,40 +83,34 @@ def board():
         print(f"  Computer choice: {num}")
 
 def computer():
-    # Winning combinations
     winning_combinations = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8],  # Rows
-        [0, 3, 6], [1, 4, 7], [2, 5, 8],  # Columns
-        [0, 4, 8], [2, 4, 6]  # Diagonals
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],  
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], 
+        [0, 4, 8], [2, 4, 6]  
     ]
 
-    # Check if computer can win
     for combo in winning_combinations:
         values = [s[i] for i in combo]
         if values.count('O') == 2 and values.count(str(combo[0] + 1)) == 1:
             return combo[values.index(str(combo[0] + 1))] + 1
 
-    # Check if player can win, block them
     for combo in winning_combinations:
         values = [s[i] for i in combo]
         if values.count('X') == 2 and values.count(str(combo[0] + 1)) == 1:
             return combo[values.index(str(combo[0] + 1))] + 1
 
-    # Take the center if available
     if s[4] == '5':
         return 5
 
-    # Take one of the corners if available
     for move in [1, 3, 7, 9]:
         if s[move - 1] == str(move):
             return move
 
-    # Take one of the sides if available
     for move in [2, 4, 6, 8]:
         if s[move - 1] == str(move):
             return move
 
-    return 1  # Fallback (shouldn't happen)
+    return 1 
 
 
 if __name__ == "__main__":
