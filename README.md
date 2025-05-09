@@ -7,7 +7,7 @@ Welcome to my GitHub portfolio! This is a comprehensive collection of projects I
 ### Projects
 
 
-1. [SRU Coding Club Website](https://github.com/mrishikreddy/SRU-Coding-Club-Website)  
+1. [SRU Coding Club Website](https://github.com/mrishikreddy/SRU-Coding-Club-Website-RT1)  
    A scalable full-stack site for SRU's coding club using Next.js and Firebase, featuring real-time authentication, leaderboard, chatbot, and admin panels optimized for 10K+ users.
 
 2. [Web Application Paradise Resorts](https://github.com/mrishikreddy/Web-Application-for-Paradise-Resorts-RT2)  
