@@ -1,0 +1,134 @@
+/* General Styles */
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+
+.container {
+  
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.logo:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Links and Actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; 
+}
+
+.links {
+  
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.link {
+
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.dark .link {
+  color: white;
+}
+
+.light .link {
+  color: black;
+}
+
+.dark .navbar {
+  background-color: black;
+  color: white;
+}
+
+.light .navbar {
+  background-color: white;
+  color: black;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.light .link{
+  color:black;
+}
+
+
+
+.link:hover {
+  color: #1e90ff;
+}
+
+
+.themeToggle:hover {
+  transform: scale(1.2);
+  color: gold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: currentColor;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Ensures the dropdown menu appears below the navbar */
+    right: 0;
+    background-color: inherit;
+    width: 100%;
+    transform: translateY(-20%);
+    opacity: 0;
+    pointer-events: none;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    background-color: rgb(0, 174, 254);
+  }
+
+  .links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .link:hover::after {
+    width: 0%;
+  }
+}

@@ -1,0 +1,194 @@
+/* skills.module.css */
+
+.section {
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* Add animation keyframes */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hidden by default */
+.section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease;
+}
+
+/* Add animation class for visibility */
+.section.animate {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.sectionTitleLight {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.sectionTitleDark {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.skillsList {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* Controls spacing between items */
+    padding: 0;
+    list-style-type: none; /* Ensure no dots or list markers */
+}
+
+.skillsListItemDark {
+    background-color: whitesmoke;
+    color:black;
+    padding: 0.8em 2.4em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(25, 25, 25);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    position: relative;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+/* Glowing effect */
+.skillsListItemDark:hover::before {
+    opacity: 1;
+}
+
+.skillsListItemDark::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 50s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.skillsListItemLight:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 12px rgba(25, 25, 25);
+}
+
+/* Glowing effect */
+.skillsListItemLight:hover::before {
+    opacity: 1;
+}
+
+.skillsListItemLight::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 50s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+
+.skillsListItemDark::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+
+@media(max-width:600px)
+{
+    .section {
+        margin-top: 40%;
+    }
+
+    .sectionTitleDark {
+        font-size: 1.5rem;
+        color: var(--clr-primary, white);
+        margin-bottom: 1rem;
+    }
+
+    .sectionTitleLight
+    {
+        font-size: 1.5rem;
+        color: var(--clr-primary, black);
+        margin-bottom: 1rem;
+    }
+
+    .skillsList {
+        max-width: 1000px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.0rem; /* Controls spacing between items */
+        padding: 0;
+        list-style-type: none; /* Ensure no dots or list markers */
+    }
+
+    .skillsListItemLight, .skillsListItemDark {
+        padding: 1.0em 1.4em;
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(25, 25, 25);
+        font-size: 0.8rem;
+        font-weight: 250;
+        transition: transform 0.2s ease-in-out;
+        text-align: center;
+        position: relative;
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+}

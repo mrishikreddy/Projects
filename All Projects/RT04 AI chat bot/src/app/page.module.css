@@ -1,0 +1,114 @@
+.chatButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+        45deg,
+        rgb(17, 0, 255),
+        rgb(0, 255, 179)
+    );
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.7s ease;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.chatButton:hover {
+  transform: scale(1.2);
+}
+
+.loadingDots span {
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+.loadingDots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loadingDots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  background-color: blue;
+  border-radius: 0 0 20px 20px;
+}
+
+.inputBar {
+  flex-grow: 1;
+  padding: 7px;
+  border-radius: 20px;
+  background: linear-gradient(
+        45deg,
+        rgb(102, 0, 255),
+        rgb(0, 110, 255) 
+      );
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  border: 1px solid silver;
+  resize: none;
+  outline: none;
+}
+
+.sendButton {
+  background-color: #0091ff;
+  color: white;
+  border: 1px solid silver;
+  border-radius: 20px;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.sendButton:hover {
+  background-color: #3fb2ff;
+}
+
+
+@media (max-width: 600px) {
+  .chatButton {
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .aiBox {
+    bottom: 100px;
+    right: 20px;
+    width: 90%;
+    height: 60vh;
+  }
+
+  .aiTitle {
+    padding: 15px;
+  }
+
+  .chatContainer {
+    padding: 7px;
+    overflow-y: auto;
+  }
+
+  .userBubble,
+  .aiBubble {
+    font-size: 14px;
+  }
+}

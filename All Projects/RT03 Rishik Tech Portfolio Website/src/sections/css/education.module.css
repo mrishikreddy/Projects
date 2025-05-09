@@ -1,0 +1,139 @@
+.edu {
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 7% 10%;
+    padding: 3%;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    border: 5px solid white;
+    box-shadow: 0 0px 15px rgba(0, 0, 0,0.5);
+    background: linear-gradient(
+    45deg,
+    #ff0000, #ff005e, 
+    #ff00c8, #c800ff,  
+    #002bff, #0060ff,  
+    #0090ff, #00c5ff,  
+    #00e0ff, #00ffc2,  
+    #3cff80, #48ff00,  
+    #aaff00, #fffb00,  
+    #ffaa00, #ff00d4,  
+    #ff5e00, #ff0059 
+    );
+    background-size: 800% 800%; /* Increase size for more gradual transitions */
+    animation: colorChange 20s ease-in-out infinite;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), 
+                 2px 2px 5px rgba(255, 255, 255, 0.2);
+
+}
+
+@keyframes colorChange {
+    0% {
+      background-position: 0% 50%; /* Start position */
+    }
+    100% {
+      background-position: 100% 50%; /* End position */
+    }
+  }
+
+
+
+.sectionTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.separator {
+    width: 40px;
+    height: 3px;
+    background-color: #007BFF;
+    margin: 0 auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7), 
+                 2px 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.sectionData {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.degree,
+.institution,
+.timeLine {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.degreeTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.degreeSubTitle {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.institutionName {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+
+.gpa {
+    font-size: 1rem;
+    color: white;
+}
+
+.timeLine {
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 20px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+    .edu {
+        margin: 40% 7%;
+        background-size: 800% 400%;
+    }
+
+    .sectionTitle {
+        font-size: 1.8rem;
+    }
+
+    .degreeTitle {
+        font-size: 1.3rem;
+    }
+
+    .degreeSubTitle {
+        font-size: 1rem;
+    }
+
+    .institutionName {
+        font-size: 1.1rem;
+    }
+
+    .gpa {
+        font-size: 0.9rem;
+    }
+
+    .timeLine {
+        font-size: 0.9rem;
+    }
+}
+
+

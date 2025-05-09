@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* General animation styles */
+.animateOnLoad {
+    opacity: 0;
+    transform: translateY(30px); /* Start slightly below original position */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+  }
+  
+  /* Large and medium screens (above 900px) */
+  .introOuterDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 2%;
+    margin-top: 8vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5%;
+    transition: transform 0.3s ease; /* Added transform transition */
+  }
+  
+  .photo:hover {
+    transform: scale(1.2); /* Changed scale to transform */
+  }
+  
+  .actualPhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .introButtonDiv {
+    display: flex;
+    gap: 2rem; /* Space between the buttons */
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .introButton {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0,0.5);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 0;
+  
+  }
+  
+  
+  
+  
+  .introButton::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0,0.5);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .introButton:hover::before {
+    opacity: 1;
+    
+  }
+  
+  .introButton:active:after {
+    background: transparent;
+    
+  }
+  
+  .introButton:active {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Small screens (below 600px) */
+  @media (max-width: 600px) {
+    .introOuterDiv {
+      flex-direction: column;
+      align-items: center;
+      gap: 2em;
+      height: auto;
+      width: 100%;
+    }
+  
+    .info {
+      order: 2;
+      max-width: 95%;
+      text-align: center;
+      padding: 2%;
+      font-size: 14px;
+    }
+  
+    .photo {
+      order: 1;
+      width: 200px;
+      height: 200px;
+      margin-left: 50px;
+      animation: backlight 3s infinite alternate;
+    }
+  
+    .actualPhoto {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .welcome {
+      font-size: 20px;
+    }
+  }
+  

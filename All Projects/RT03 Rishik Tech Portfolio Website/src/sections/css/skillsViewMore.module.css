@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+@keyframes fadeInUp {
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.outerDiv {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 20px;
+  margin-top: 10%;
+  transform: translateY(100px);
+  transition: all 1s ease;
+}
+
+
+/* Add animation class for visibility */
+.outerDiv.animate {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.moreInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 10px;
+  width: 100%;
+}
+
+
+.verticalLineDark {
+  width: 5px;
+  background-color: silver;
+  border-radius: 100px;
+  height: auto; /* Allow it to expand */
+  align-self: stretch; /* Ensures it takes the full height of its container */
+}
+
+.verticalLineLight {
+  width: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 100px;
+  height: auto; /* Allow it to expand */
+  align-self: stretch; /* Ensures it takes the full height of its container */
+}
+
+
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .skill {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    height: 20px;
+  }
+
+  .progressBarLight {
+    flex: 1;
+    background-color: rgb(160, 160, 160);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px; /* Keep it at 10px */
+    width: 100%;
+    position: relative;
+  }
+  
+  
+  .progress {
+    background-color: #34db4d; /* Green progress bar */
+    height: 100%;
+    border-radius: 20px 0 0 20px; /* Smooth edges */
+  }
+  
+
+.catgl {
+  width: 40%;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.sectionTitle1Dark {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white; /* Light gray */
+}
+
+.sectionTitle1Light {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: Black; /* Light gray */
+}
+
+.sectionTitle2Dark {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: white; /* Light gray */
+}
+
+.sectionTitle2Light {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: rgb(0, 0, 0); /* Light gray */
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skillCategory {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2px 5px;
+  border-radius: 8px;
+}
+
+.skillItemsDark{
+  font-size: 16px;
+  line-height: 2;
+  color: rgb(0, 255, 68);
+  letter-spacing: 1px;
+  width: 65%; /* Rest of the space for skill items */
+}
+
+.skillItemsLight{
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 600;
+  color: rgb(0, 220, 37);
+  letter-spacing: 0.5px; 
+  width: 65%; /* Rest of the space for skill items */
+}
+
+
+@media( max-width: 1100px)
+{
+  .skillNameLight,
+  .skillNameDark {
+    font-size: 16px;
+    font-weight: bold;
+    width: 35%; /* Allocate fixed space for skill names */
+  }
+
+  .sectionTitle1Dark,.sectionTitle1Light  {
+    padding-top: 10px;
+  }
+
+  .sectionTitle2Light, .sectionTitle2Dark{
+    padding-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .bars{
+    width: 45%;
+  }
+
+  .catgl{
+    width: 55%;
+  }
+  
+
+}
+
+
+@media (max-width: 700px) {
+
+  .skillCategory {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sectionTitle1Dark,.sectionTitle1Light  {
+    font-size: 21px;
+  }
+  
+  .sectionTitle2Light, .sectionTitle2Dark {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+  .categoryTitleLight,
+  .categoryTitleDark,
+  .skillItemsLight,
+  .skillItemsDark
+  {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .moreInfo {
+    flex-direction: column;
+  }
+
+  .bars {
+    padding: 0px;
+    gap : 2px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .verticalLineLight,
+  .verticalLineDark{
+    width: 100%;
+    height: 5px;
+    border-radius: 100px;
+  }
+
+  .catgl {
+    margin-top: 40px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .skillsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .skillCategory {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 10px;
+    border-radius: 8px;
+  }
+
+  .skillNameLight,
+  .skillNameDark {
+    font-size: 16px;
+    width: 30%;
+  }
+
+  .progressBarLight,
+  .progressBarDark {
+    height: 10px;
+  }
+
+  
+}

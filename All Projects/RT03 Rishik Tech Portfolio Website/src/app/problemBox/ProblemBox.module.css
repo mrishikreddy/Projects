@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Container with Animated Gradient Background */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #00ff22,
+    #005eff
+  );
+  
+  animation: gradientAnimation 15s ease infinite;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Navbar with Glassmorphism */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0); /* Fixed transparency */
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers all elements inside */
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0);
+  transition: 2s ease;
+  position: relative; /* Ensures absolute positioning works */
+}
+
+.title:hover{
+  color: gold;
+}
+
+/* Content Area */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+/* Form with Glassmorphism */
+.InfoDiv{
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  word-spacing: 1px;
+  max-width: 1000px;
+  
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: rgba(255, 255, 255);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  max-width: 700px;
+  transform: translateY(-50%);
+}
+
+.form input,
+.form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid silver;
+  color: #000000;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form textarea{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+
+}
+
+.submitButton:hover {
+  box-shadow: 0 0px 10px rgb(255, 255, 255,0.8);
+  background: linear-gradient(90deg, #0800ff, #7b00ff, #0800ff);
+  
+}
+
+/* Success Message with Fade-In Animation */
+.successMessage {
+  width: 95%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(17, 255, 0);
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Error Message */
+.error {
+  display: flex;
+  position: fixed;
+  color: rgb(255, 0, 0);
+  padding: 10px;
+  bottom: 150px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+}
+
+/* Footer with Glassmorphism */
+.footer {
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.footerOuterDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #00d2ff;
+}
+
+/* Screen-Reader Only Class for Accessibility */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+

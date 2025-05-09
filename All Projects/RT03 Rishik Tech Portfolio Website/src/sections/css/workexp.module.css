@@ -1,0 +1,110 @@
+.extremeOuterDiv {
+    background-color: black;
+    padding: 3%;
+    border-radius: 15px;
+    max-width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+  }
+  
+  /* Add animation keyframes */
+  @keyframes fadeInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  /* Hidden by default */
+  .extremeOuterDiv {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease;
+  }
+  
+  /* Add animation class for visibility */
+  .extremeOuterDiv.animate {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  
+  .sectionTitle {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
+  .outerDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  
+  
+  
+  
+  .title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .company {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .outerDiv {
+      gap: 2rem;
+    }
+  
+    .wexp {
+      width: 90%;
+    }
+  
+    .sectionTitle {
+      font-size: 28px;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .company {
+      font-size: 18px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  }
+  

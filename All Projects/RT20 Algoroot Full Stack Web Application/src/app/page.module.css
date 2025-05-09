@@ -1,0 +1,236 @@
+/* Container */
+.container {
+  margin-top: 70px;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  margin-top: 60px;
+  width: 15%;
+  min-width: 100px;
+  background: #333;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebarTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  padding: 10px;
+}
+
+.active {
+  font-weight: bold;
+  color: #0070f3;
+}
+
+/* Fixed Details Header */
+.detailsHeader {
+  position: fixed;
+  top: 60px; /* Adjust to fit under navbar */
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensures it stays above the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main Content */
+.mainContent {
+  flex-grow: 1;
+  margin-left: 20%;
+  padding: 20px;
+  overflow-x: auto;
+  padding-top: 120px; /* Prevent overlap with fixed header */
+}
+
+/* Search Bar */
+.searchBar {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Table */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  table-layout: fixed;
+}
+
+.table th, .table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+  position: relative;
+}
+
+.table td:hover {
+  overflow: visible;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.table td::-webkit-scrollbar {
+  height: 5px;
+}
+
+.table th {
+  background: #0070f3;
+  color: white;
+  cursor: pointer;
+}
+
+.sortable:hover {
+  background: #005bb5;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pagination button {
+  padding: 7px 12px;
+  border: none;
+  background: #0070f3;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Fixed Hamburger Button */
+.hamburger {
+  display: none;
+  position: fixed; /* Fixed so it doesn't scroll */
+  top: 20px; /* Adjust to align with navbar */
+  left: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  z-index: 1100; /* Keeps it above other elements */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .table td:hover {
+    overflow-x: auto;
+    display: block;
+  }
+}
+
+/* Mobile View - Sidebar and Hamburger */
+@media (max-width: 700px) {
+  .sidebar {
+    width: 250px;
+    margin-top: 80px;
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 1000;
+    padding-top: 10px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1100;
+  }
+
+  .mainContent {
+    margin-left: 0;
+    width: 100%;
+    padding-top: 10px; /* Adjusted to prevent overlap */
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .table th, .table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 50%;
+  }
+
+  .searchBar {
+    width: 90%;
+  }
+
+  .pagination {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .searchBar {
+    width: 90%;
+  }
+
+  .mainContent {
+    flex-grow: 1;
+    padding: 5px;
+    padding-top: 10px;
+    overflow-x: auto;
+  }
+}

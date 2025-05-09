@@ -1,0 +1,204 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.scrollButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.faicons{
+  background-color: black;
+  color:white;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 3rem;
+  font-size: rem;
+}
+.faicons:hover {
+  background-color: rgb(0, 225, 255);
+}
+
+.scrollButton:first-of-type {
+  left: 10px;
+}
+
+.scrollButton:last-of-type {
+  right: 10px;
+}
+
+.active {
+  transform: scale(1.05); /* Slightly increase the size */
+  z-index: 1; /* Ensure it appears above other slides */
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dotLight {
+  width: 12px;
+  height: 12px;
+  background-color: silver;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dotDark {
+  width: 12px;
+  height: 12px;
+  background-color: #787878;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.contentDiv {
+  background-color: black;
+  width: 85%;
+  height: 90%;
+  border-radius: 30px;
+  border: 5px solid white;
+  position: relative; /* Required to position the text correctly */
+  display: flex;
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 7px rgba(0, 0, 0,0.5);
+}
+
+
+
+.c0 {
+  background: linear-gradient(135deg, #3EC6FF, #00AEEF); /* Bright sky blue to cyan */
+}
+
+.c1 {
+  background: linear-gradient(135deg, #8E2DE2, #4A00E0); /* Purple gradient (unchanged, still good) */
+}
+
+.c2 {
+  background: linear-gradient(135deg, #FF416C, #FF4B2B); /* Vivid warm red/pink with contrast */
+}
+
+
+.content {
+  width : 90%;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 
+               3px 3px 6px rgba(0, 0, 0, 0.2);
+  height : auto;
+}
+
+
+
+.dotLight:hover {
+  background-color: black;
+}
+
+.dotDark:hover {
+  background-color: rgb(215, 215, 215);
+}
+
+.activeDotDark {
+  background-color: white;
+}
+
+.activeDotLight {
+  background-color: black;
+}
+
+
+
+
+@media(max-width:1000px)
+{
+  .content {
+    width : 90%;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 
+                 3px 3px 6px rgba(0, 0, 0, 0.2);
+    height : auto;
+  }
+  .faicons{
+    font-size: 2rem;
+  }
+}
+
+@media(max-width:600px)
+{
+  .outerDiv {
+    margin-top: 40%;
+  }
+  .sectionTitleLight,
+  .sectionTitleDark {
+    margin-bottom: 1rem;
+  }
+
+  .scrollButton:first-of-type {
+    left: 2%;
+    padding: 2%;
+  }
+  
+  .scrollButton:last-of-type {
+    right: 2%;
+    padding: 2%;
+  }
+
+  .carouselContainer {
+    width:100%;
+  }
+
+  .contentDiv {
+    font-size: 25px;
+  }
+
+  .content {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 
+                 3px 3px 6px rgba(0, 0, 0, 0.2);
+    height : auto;
+  }
+
+}
