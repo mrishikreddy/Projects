@@ -28,31 +28,31 @@ Welcome to my GitHub portfolio! This is a comprehensive collection of projects I
 
 7. [Customer Segmentation and Service Prediction](https://github.com/mrishikreddy/Customer-Segmentation-and-Service-Prediction-RT7)  
    Data science project that uses clustering algorithms (like K-Means) to segment customers based on behavioral data, followed by classification models to predict what services or products they're likely to need. Great for businesses looking to enhance customer personalization.
-8. [Image classifier.ipynb](https://github.com/mrishikreddy/Image-Classifier-RT8)  
+8. [Image classifier](https://github.com/mrishikreddy/Image-Classifier-RT8)  
    A deep learning notebook that classifies input images into predefined categories using a trained Convolutional Neural Network. It includes data augmentation and evaluation metrics.
 
-9. [Image describer.ipynb](https://github.com/mrishikreddy/Image-Describer-RT9)  
+9. [Image describer](https://github.com/mrishikreddy/Image-Describer-RT9)  
    A deep learning model combining CNN and LSTM architectures to generate natural language descriptions for input images. It demonstrates the integration of computer vision with sequence modeling.
 
-10. [Image_Recognition.ipynb](https://github.com/mrishikreddy/Image-Recognition-10)  
+10. [Image_Recognition](https://github.com/mrishikreddy/Image-Recognition-10)  
    A Jupyter Notebook project implementing a Convolutional Neural Network (CNN) for classifying images from various categories. It includes preprocessing, training, evaluation, and accuracy visualization.
 
 11. [Predicting Optimal Drug Prescription Using ML](https://github.com/mrishikreddy/Predicting-Optimal-Drug-Prescription-Using-ML-RT11)  
     This machine learning project leverages classification techniques to suggest the most suitable drug prescription based on various patient attributes like age, blood pressure, and cholesterol levels. It's a healthcare-related predictive modeling application.
 
-12. [Prediction_of_CO2_emissions.ipynb](https://github.com/mrishikreddy/Prediction-of-CO2-emissions-RT12)  
+12. [Prediction_of_CO2_emissions](https://github.com/mrishikreddy/Prediction-of-CO2-emissions-RT12)  
    A regression-based project aimed at predicting CO2 emissions of vehicles using features like engine size, fuel type, and transmission. It showcases data visualization, feature engineering, and model evaluation.
 
-13. [Restaurant order management system.c](https://github.com/mrishikreddy/Restaurant-order-management-system-RT13)
+13. [Restaurant order management system](https://github.com/mrishikreddy/Restaurant-order-management-system-RT13)
     Console-based restaurant ordering system written in C. It uses linked lists to manage menu items, track orders, and compute bills. A great example of how data structures can simulate real-world services.
 
-14. [Student management system.c](https://github.com/mrishikreddy/Student-management-system-RT14)  
+14. [Student management system](https://github.com/mrishikreddy/Student-management-system-RT14)  
      A complete CLI student database system in C, enabling users to add, delete, search, and update student records. The program demonstrates structured data storage and dynamic memory handling.
     
-15. [Tic Tac Toe.py](https://github.com/mrishikreddy/Tic-Tac-Toe-RT15)  
+15. [Tic Tac Toe](https://github.com/mrishikreddy/Tic-Tac-Toe-RT15)  
     A clean, responsive website that brings the classic Tic Tac Toe game to the browser. The user plays against a smart AI in a dynamic and interactive layout optimized for all screen sizes.
 
-16. [Scholars Companion.c](https://github.com/mrishikreddy/Scholars-Companion-RT16)  
+16. [Scholars Companion](https://github.com/mrishikreddy/Scholars-Companion-RT16)  
     A C program built to support students academically. It includes modules like GPA calculation, academic planning, and shortcut links to educational resources. Designed as a multipurpose command-line companion for students.
 
 17. [Smart Vehicle Parking System](https://github.com/mrishikreddy/Smart-Vehicle-Parking-System-RT17)  
