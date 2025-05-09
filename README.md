@@ -4,7 +4,7 @@ Welcome to my GitHub portfolio! This is a comprehensive collection of projects I
 
 ---
 
-### Projects
+### List of Projects
 
 
 1. [SRU Coding Club Website](https://github.com/mrishikreddy/SRU-Coding-Club-Website-RT1)  
