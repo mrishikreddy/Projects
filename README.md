@@ -1,4 +1,4 @@
-#  My Projects
+# Projects Portfolio
 
 Welcome to my GitHub portfolio! This is a comprehensive collection of projects I've built across various domains—ranging from web development and AI/ML to C-based system programs. Each one reflects a different aspect of my learning journey and technical creativity.
 
