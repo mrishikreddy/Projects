@@ -20,7 +20,7 @@ Welcome to my GitHub portfolio! This is a comprehensive collection of projects I
    Designed to simulate human-like conversations, this chatbot utilizes natural language processing techniques and context awareness to handle real-time queries with meaningful responses.
 
 5. [Mail Sender](https://github.com/mrishikreddy/Mail-Sender-RT5)  
-   Built using Node.js and Nodemailer, this project offers an efficient way to automate the process of sending emails, whether it's for newsletters, contact forms, or transactional messages.
+   It is a Python script that sends automated daily task reminders via Gmail, using a secure SSL connection. It delivers a styled HTML email listing tasks for the current day, retrieved from a predefined dictionary based on the date.
 
 6. [ProblemBox](https://github.com/mrishikreddy/Problem-Box-RT6)  
    A visually modern platform allowing users to submit anonymous feedback or issues. It includes a responsive UI with glassmorphism design and real-time email notifications for each submission.
