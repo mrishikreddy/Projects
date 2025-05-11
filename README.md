@@ -49,7 +49,7 @@ Welcome to my GitHub portfolio! This is a comprehensive collection of projects I
 14. [Student management system](https://github.com/mrishikreddy/Student-management-system-RT14)  
      A complete CLI student database system in C, enabling users to add, delete, search, and update student records. The program demonstrates structured data storage and dynamic memory handling.
     
-15. [Tic Tac Toe](https://github.com/mrishikreddy/Tic-Tac-Toe-RT15)  
+15. [Tic Tac Toe AI](https://github.com/mrishikreddy/Tic-Tac-Toe-RT15)  
     A clean, responsive website that brings the classic Tic Tac Toe game to the browser. The user plays against a smart AI in a dynamic and interactive layout optimized for all screen sizes.
 
 16. [Scholars Companion](https://github.com/mrishikreddy/Scholars-Companion-RT16)  
