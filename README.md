@@ -40,7 +40,7 @@ Welcome to my GitHub portfolio! This is a comprehensive collection of projects I
 11. [Predicting Optimal Drug Prescription Using ML](https://github.com/mrishikreddy/Predicting-Optimal-Drug-Prescription-Using-ML-RT11)  
     This machine learning project leverages classification techniques to suggest the most suitable drug prescription based on various patient attributes like age, blood pressure, and cholesterol levels. It's a healthcare-related predictive modeling application.
 
-12. [Prediction_of_CO2_emissions](https://github.com/mrishikreddy/Prediction-of-CO2-emissions-RT12)  
+12. [Prediction of CO2 emissions](https://github.com/mrishikreddy/Prediction-of-CO2-emissions-RT12)  
    A regression-based project aimed at predicting CO2 emissions of vehicles using features like engine size, fuel type, and transmission. It showcases data visualization, feature engineering, and model evaluation.
 
 13. [Restaurant order management system](https://github.com/mrishikreddy/Restaurant-order-management-system-RT13)
