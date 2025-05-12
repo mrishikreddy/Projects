@@ -34,7 +34,7 @@ Welcome to my GitHub portfolio! This is a comprehensive collection of projects I
 9. [Image describer](https://github.com/mrishikreddy/Image-Describer-RT9)  
    A deep learning model combining CNN and LSTM architectures to generate natural language descriptions for input images. It demonstrates the integration of computer vision with sequence modeling.
 
-10. [Image_Recognition](https://github.com/mrishikreddy/Image-Recognition-10)  
+10. [Image Recognition](https://github.com/mrishikreddy/Image-Recognition-10)  
    A Jupyter Notebook project implementing a Convolutional Neural Network (CNN) for classifying images from various categories. It includes preprocessing, training, evaluation, and accuracy visualization.
 
 11. [Predicting Optimal Drug Prescription Using ML](https://github.com/mrishikreddy/Predicting-Optimal-Drug-Prescription-Using-ML-RT11)  
