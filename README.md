@@ -75,6 +75,6 @@ Welcome to my GitHub portfolio! This is a comprehensive collection of projects I
 
 These projects cover a variety of tech stacks, domains, and real-world use cases. From intelligent interfaces to backend systems and machine learning models, each repository has its own story and learning behind it.
 
-🔗 For more about me, check out [rishik.tech](https://rishik.tech) or [LinkedIn](https://www.linkedin.com/in/rishikreddym/).
+For more about me, check out [rishik.tech](https://rishik.tech) or [LinkedIn](https://www.linkedin.com/in/rishikreddym/).
 
 ---
